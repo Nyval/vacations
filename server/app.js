@@ -28,7 +28,7 @@ app.get('/test',(req, res)=>{
     res.send('testing');
 })
 
-//Base middleware.
+//Base middleware. comment
 app.use((req, res, next)=>{
     // res.setHeader("Access-Control-Allow-Origin", req.headers.origin);
     let skipUserIdCheck = (req.method=='POST' && (req.url=='/users' || req.url=='/login'));
